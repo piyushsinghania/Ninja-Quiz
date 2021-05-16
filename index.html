@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Ninja Quiz</title>
+</head>
+
+<body>
+    <!--Bootstrap classes - py means padding in y axis and my means margin in y axis -->
+    <!-- Top Section -->
+    <div class="intro py-3 text-center bg-white">
+        <div class="container">
+            <h2 class="display-3 my-4 text-primary">Ninja Quiz</h2>
+        </div>
+    </div>
+
+    <!-- Result Section  -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>You are <span class="text-primary display-4 p-3">0%</span> ninja</p>
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">On with the questions...</h2>
+
+            <form class="quiz-form text-light">
+                <!-- Q.1 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. How do you give a ninja direction?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">Show them a map</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">Don't worry, a ninja will find you</label>
+                    </div>
+                </div>
+                <!-- Q.2 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">2. If a ninja has three apples, then gives one to
+                        Mario & one
+                        to
+                        Yoshi, how many apples does the ninja have left?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">1 apple</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">3 apples, and 2 corpses.</label>
+                    </div>
+                </div>
+                <!-- Q.3 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">3.How do you know when you've met a ninja?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">You'll recognise the outfit</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">The grim reaper will tell you</label>
+                    </div>
+                </div>
+                <!-- Q.4 -->
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4. What is a ninja's favourite array method?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">forEach()</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">slice()</label>
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
